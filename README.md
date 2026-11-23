@@ -1,16 +1,49 @@
-# React + Vite
+# Ανάσα Pilates Studio (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Το site ενός μικρού στούντιο pilates στην Καβάλα, φτιαγμένο σε **React** με **Vite**.
 
-Currently, two official plugins are available:
+🔗 **Ζωντανό site:** [anasa-react.netlify.app](https://anasa-react.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Το σχέδιο το έφτιαξα στο **Figma**. Πρώτα το υλοποίησα σε HTML/CSS ([anasa-pilates-studio.netlify.app](https://anasa-pilates-studio.netlify.app)) και μετά το μετέφερα σε React, χωρισμένο σε components.
 
-## React Compiler
+## Τι περιλαμβάνει
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Μαθήματα** και **πακέτα τιμών**, που φτιάχνονται από λίστες δεδομένων με `.map()` και props
+- **Εβδομαδιαίο πρόγραμμα**: πίνακας σε υπολογιστή και καρτέλες ημερών σε κινητό (`useState`)
+- **Συχνές ερωτήσεις** που ανοιγοκλείνουν (`useState`)
+- **Μενού για κινητό** με κουμπί άνοιγμα/κλείσιμο (`useState`)
+- Responsive σχεδιασμός για κινητό, tablet και υπολογιστή
 
-## Expanding the ESLint configuration
+## Δομή
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  App.jsx            το κεντρικό component
+  anasa-style.css    όλο το CSS
+  components/
+    Header.jsx       λογότυπο και μενού
+    Hero.jsx         η πρώτη ενότητα με τη φωτογραφία
+    Classes.jsx      τα μαθήματα (με ClassCard.jsx)
+    Space.jsx        ο χώρος του στούντιο
+    Pricing.jsx      τα πακέτα (με PriceCard.jsx)
+    Scedule.jsx      το πρόγραμμα
+    Faq.jsx          οι ερωτήσεις (με FaqItem.jsx)
+    Footer.jsx       επικοινωνία και ωράριο
+```
+
+## Τεχνολογίες
+
+React · Vite · CSS · Figma · Netlify
+
+## Εκτέλεση τοπικά
+
+```
+npm install
+npm run dev
+```
+
+---
+
+Σχεδιασμός και υλοποίηση: **Αναστασία Σφίνιου** · [saitaki-web.netlify.app](https://saitaki-web.netlify.app)
+
+*Δείγμα portfolio. Τα στοιχεία επικοινωνίας στο site είναι ενδεικτικά.*

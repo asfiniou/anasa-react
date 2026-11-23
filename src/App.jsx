@@ -5,7 +5,7 @@ import Classes from "./components/Classes";
 import Pricing from "./components/Pricing";
 import Schedule from "./components/Scedule";
 import Faq from "./components/Faq";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
